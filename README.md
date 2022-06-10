@@ -51,10 +51,16 @@ Make them all in the top-level of the directory - meaning place them all in this
 Great! Now we have our project ready to code!
 
 ### Install `dotenv` Library Dependencies
-Let's go to npm dotenv to find the package and get downloading and usage instructions.
+Before we start installing libraries, let's get our `package.json` file.
+* In the terminal, type:
+	* `npm init`
 
-type `npm i dotenv` in the terminal
-this installs the library so we can use it in our project.
+Let's go to [npm's dotenv page](https://www.npmjs.com/package/dotenv) to find the package and get downloading and usage instructions.
+
+* In the terminal, type: 
+	* `npm i dotenv`
+
+This installs the library so we can use it in our project.
 
 ### Config Dotenv
 Now we need to import it properly. If you check the npm site it says we need to do this:
