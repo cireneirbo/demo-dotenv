@@ -48,8 +48,6 @@ Make them all in the top-level of the directory - meaning place them all in this
 * Create a `.gitignore` to follow best practices and avoid pushing unwanted files to GitHub.
 * Create a `.env-sample` file to use as an example for the future.
 
-Great! Now we have our project ready to code!
-
 ### Install `dotenv` Library Dependencies
 Before we start installing libraries, let's get our `package.json` file.
 * In the terminal, type:
@@ -63,30 +61,31 @@ Let's go to [npm's dotenv page](https://www.npmjs.com/package/dotenv) to find th
 This installs the library so we can use it in our project.
 
 ### Config Dotenv
-Now we need to import it properly. If you check the npm site it says we need to do this:
+Now we need to import it properly.\ 
+If you check the [npm site](https://www.npmjs.com/package/dotenv), it says we need to add this near the top of `main.js` (always keep at the bottom of any other imports you might add to your own projects):
+* `require('dotenv').config();`
 
-require('dotenv').config();
-
-at the top of main.js
-
-This is a bit different than most packages, and should always be kept at the bottom of your imports, and above any code you're calling an environment variable with.
+This is a bit different than most packages, and should always be kept at the bottom of your imports, and above any code you're calling an environment variable with.\
+Great! Now we have our project ready to code!
 
 ### Create "Hello World" Command
-Then we can start coding.
-Type 
-console.log("Hello, " + process.env.name + "!");
+Let's start coding!\
+* Below the `dotenv` import, type:
+	* `console.log("Hello, " + process.env.name + "!");`
 
-This will give us a Hello World type message when we run it. But, first we need to assign our name to the environment variable "name".
+This will give us a "Hello World"-type message when we run it correctly. But, first we need to assign our name to the environment variable `name`.
 
-Go to the .env file and add
-name="Eric"
+* Go to the `.env` file and add:
+	* `name="User"`
+* Save your project and we are ready to run it.
 
-Save your project and we are ready to run it.
-
-In the terminal, type 
-node main.js
+* In the terminal, type:
+	* `node main.js`
 
 It works! Cool!
+```
+Hello User!
+```
 
 ### Add `opener` and Create "Opener" Command
 Now let's add something a bit more useful to give you a better idea of how to use environment variables.
