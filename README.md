@@ -160,6 +160,6 @@ name="your-name"
 url="your-url"
 ```
 
-This `.env-sample` will upload to version control because it isn't listed in our .gitignore file. It is merely there as a reference, and it has no sensitive information. This is crucial when using a private API key or secrets.
+This `.env-sample` will upload to version control because it isn't listed in our `.gitignore` file. It is merely there as a reference, and it has no sensitive information. This is crucial when using a private API key or secrets.
 
 Well there you have it folks. `dotenv` in all of it's glory! Good luck and have fun! :)
