@@ -13,17 +13,14 @@ Today, I'm going to show you how use the JavaScript library called `dotenv`, whi
 Enivornment variables can hold secret keys such as API keys, login credentials, or any other number of information you need to use, but want to keep hidden from the users/internet.
 
 We will: 
-1. [Start](https://github.com/cireneirbo/demo-dotenv/edit/main/README.md#getting-started) an empty NodeJS project.
-2. 
-* Start an empty NodeJS project.
-* Download the library `dotenv`.
-* Import the library.
-* Create some boilerplate code in `main.js`.
-* Set up the `.env` file.
-* Create some environmental variables.
-* Then run the code to call the variables in the `main.js` file.
+1. [Start](https://github.com/cireneirbo/demo-dotenv/blob/main/README.md#getting-started) an empty NodeJS project.
+2. [Create](https://github.com/cireneirbo/demo-dotenv#create-project-files) all necessary files for project.
+3. [Import](https://github.com/cireneirbo/demo-dotenv#install-dotenv-library-dependencies) the `dotenv` library.
+4. [Configure](https://github.com/cireneirbo/demo-dotenv#config-dotenv) `dotenv` environmental variables.
+5. [Code](https://github.com/cireneirbo/demo-dotenv#create-hello-world-command) a command using `dotenv`.
+6. [Code](https://github.com/cireneirbo/demo-dotenv#add-opener-and-create-opener-command) a more advanced command with `opener`.
+7. [Wrap up](https://github.com/cireneirbo/demo-dotenv#preparing-to-push-to-github) the project with some git essentials.
 
-Then we will be creating a slightly more advanced example with the npm library `opener` to open a website url hidden as an environment variable.\
 So let's start!
 
 ### Getting Started
