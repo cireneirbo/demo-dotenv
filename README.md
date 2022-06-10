@@ -13,6 +13,8 @@ Today, I'm going to show you how use the JavaScript library called `dotenv`, whi
 Enivornment variables can hold secret keys such as API keys, login credentials, or any other number of information you need to use, but want to keep hidden from the users/internet.
 
 We will: 
+1. [Start](https://github.com/cireneirbo/demo-dotenv/edit/main/README.md#getting-started) an empty NodeJS project.
+2. 
 * Start an empty NodeJS project.
 * Download the library `dotenv`.
 * Import the library.
