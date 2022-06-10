@@ -30,24 +30,27 @@ Create a folder for your project however you normally do. I am going to use the 
 	* `mkdir demo-dotenv`
 * Just to make sure we have Node installed, type:
 	* `node -v`
-If it doesn't tell you a version number, then you need to install node. Head over to https://nodejs.org/en/ and install the version for your OS and then come back.
-
+* If it doesn't tell you a version number, then you need to install node. Head over to https://nodejs.org/en/ and install the version for your OS and then come back.
 * Let's also check if you have Git installed too, type:
 	* `git --version`
+* Same as before, if it doesn't tell you a version number, then you need to install git. Head over to https://git-scm.com/downloads and install the version for your OS and then come back.
 
-Same as before, if it doesn't tell you a version number, then you need to install git. Head over to https://git-scm.com/downloads and install the version for your OS and then come back.
-
-Now we have a folder to work out of, and our set up out of the way. Let's open our IDE next. I use [VSCodium](https://vscodium.com/), but you can use whatever you want.\
+Now we have a folder to work out of, and our set up out of the way. Let's open our IDE next. I use [VSCodium](https://vscodium.com/), but you can use whatever you want.
 * Inside your IDE, open our project folder that we made already.
 
 Now we have a fresh slate to work with.
 
 ### Create Project Files
-We will make a `main.js` file to run our code in.\
-And a `.env` to keep our variables in.
+Let's create some empty files in our new folder.\
+Make them all in the top-level of the directory - meaning place them all in this folder without any other folders added for depth/nesting.
+* Create a `main.js` file to run our code in.
+* Create a `.env` file to keep our variables in.
+* Create a `.gitignore` to follow best practices and avoid pushing unwanted files to GitHub.
+* Create a `.env-sample` file to use as an example for the future.
+
+Great! Now we have our project ready to code!
 
 ### Install `dotenv` Library Dependencies
-
 Let's go to npm dotenv to find the package and get downloading and usage instructions.
 
 type `npm i dotenv` in the terminal
