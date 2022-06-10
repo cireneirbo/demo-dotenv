@@ -30,9 +30,11 @@ Create a folder for your project however you normally do. I am going to use the 
 	* `mkdir demo-dotenv`
 * Just to make sure we have Node installed, type\
 	* `node -v`\
+
 If it doesn't tell you a version number, then you need to install node. Head over to https://nodejs.org/en/ and install the version for your OS and then come back.
 * Let's also check if you have Git installed too, type\
 	* `git --version`\
+
 Same as before, if it doesn't tell you a version number, then you need to install git. Head over to https://git-scm.com/downloads and install the version for your OS and then come back.
 
 Now we have a folder to work out of, and our set up out of the way. Let's open our IDE next. I use [VSCodium](https://vscodium.com/), but you can use whatever you want.\
