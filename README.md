@@ -70,7 +70,7 @@ npm i dotenv
 This installs the library so we can use it in our project.
 
 ### Config Dotenv
-Now we need to import it properly.\ 
+Now we need to import it properly.\
 If you check the [npm site](https://www.npmjs.com/package/dotenv), it says we need to add this near the top of `main.js` (always keep at the bottom of any other imports you might add to your own projects):
 ```main.js
 require('dotenv').config();
