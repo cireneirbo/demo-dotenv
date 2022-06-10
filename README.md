@@ -10,7 +10,7 @@ Follow along with this text tutorial, or watch the [video](https://www.youtube.c
 
 ### Overview
 Today, I'm going to show you how use the JavaScript library called `dotenv`, which is used to access environment variables in a NodeJS project.\
-Enivornment variables can hold secret keys such as API keys, login credentials, or any other number of information you need to use, but want to keep hidden from the users/internet.
+Environment variables can hold secret keys such as API keys, login credentials, or any other number of information you need to use, but want to keep hidden from the users/internet.
 
 We will: 
 1. [Start](https://github.com/cireneirbo/demo-dotenv/blob/main/README.md#getting-started) an empty NodeJS project.
