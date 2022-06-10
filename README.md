@@ -22,18 +22,18 @@ We will:
 * Then run the code to call the variables in the `main.js` file.
 
 Then we will be creating a slightly more advanced example with the npm library `opener` to open a website url hidden as an environment variable.\
-So let's start!\
+So let's start!
 
 ### Getting Started
 Create a folder for your project however you normally do. I am going to use the terminal, Bash:
-* Navigate to wherever you'd like to save the demo and type:\
+* Navigate to wherever you'd like to save the demo and type:
 	* `mkdir demo-dotenv`
-* Just to make sure we have Node installed, type\
-	* `node -v`\
-
+* Just to make sure we have Node installed, type:
+	* `node -v`
 If it doesn't tell you a version number, then you need to install node. Head over to https://nodejs.org/en/ and install the version for your OS and then come back.
-* Let's also check if you have Git installed too, type\
-	* `git --version`\
+
+* Let's also check if you have Git installed too, type:
+	* `git --version`
 
 Same as before, if it doesn't tell you a version number, then you need to install git. Head over to https://git-scm.com/downloads and install the version for your OS and then come back.
 
