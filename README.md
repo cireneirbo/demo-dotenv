@@ -1,5 +1,5 @@
 # demo-dotenv
-The code for my demo-dotenv [tutorial](https://www.youtube.com/watch?v=0hAahRdB5eA).
+The code sample for my demo-dotenv [tutorial](https://www.youtube.com/watch?v=0hAahRdB5eA).
 
 ## Dependencies
 * [dotenv](https://www.npmjs.com/package/dotenv)
@@ -21,21 +21,22 @@ We will:
 * Create some environmental variables.
 * Then run the code to call the variables in the `main.js` file.
 
-Then we will be creating a slightly more advanced example with the npm library `opener` to open a website url hidden as an environment variable.
-
-So let's start!
+Then we will be creating a slightly more advanced example with the npm library `opener` to open a website url hidden as an environment variable.\
+So let's start!\
 
 ### Getting Started
-Create a folder for your project however you normally do. I am going to use the terminal Bash:
+Create a folder for your project however you normally do. I am going to use the terminal, Bash:
 * Navigate to wherever you'd like to save the demo and type:\
-	`mkdir demo-dotenv`
-* Just to make sure we have Node installed, type
-	`node -v`
-* If it doesn't tell you a version number, then you need to install node. Head over to https://nodejs.org/en/ and install the version for your OS and then come back.
+	* `mkdir demo-dotenv`
+* Just to make sure we have Node installed, type\
+	* `node -v`
+If it doesn't tell you a version number, then you need to install node. Head over to https://nodejs.org/en/ and install the version for your OS and then come back.
+* Let's also check if you have Git installed too, type\
+	* `git --version`
+Same as before, if it doesn't tell you a version number, then you need to install git. Head over to https://git-scm.com/downloads and install the version for your OS and then come back.
 
-Now we have a folder to work out of. Let's open our IDE next. I use Codium, but you can use whatever you want.
-
-Open our project folder that we made already.
+Now we have a folder to work out of, and our set up out of the way. Let's open our IDE next. I use [VSCodium](https://vscodium.com/), but you can use whatever you want.\
+* Inside your IDE, open our project folder that we made already.
 
 Now we have a fresh slate to work with.
 
@@ -114,7 +115,7 @@ inside type .env
 This will exclude your .env file from ever being uploaded with git to a version control. 
 We will want to create a sample env to show our potential users what to do with their .env file if they are going to use our program themselves.
 
-Create a .env-sample file
+Create a `.env-sample` file
 inside, type
 name="your-name"
 url="your-url"
