@@ -26,12 +26,12 @@ So let's start!
 ### Getting Started
 Create a folder for your project however you normally do. I am going to use the terminal, Bash:
 * Navigate to wherever you'd like to save the demo and type:
-	* `mkdir demo-dotenv`
+	```mkdir demo-dotenv```
 * Just to make sure we have Node installed, type:
-	* `node -v`
+	```node -v```
 * If it doesn't tell you a version number, then you need to install node. Head over to https://nodejs.org/en/ and install the version for your OS and then come back.
 * Let's also check if you have Git installed too, type:
-	* `git --version`
+	```git --version```
 * Same as before, if it doesn't tell you a version number, then you need to install git. Head over to https://git-scm.com/downloads and install the version for your OS and then come back.
 
 Now we have a folder to work out of, and our set up out of the way. Let's open our IDE next. I use [VSCodium](https://vscodium.com/), but you can use whatever you want.
@@ -50,12 +50,12 @@ Make them all in the top-level of the directory - meaning place them all in this
 ### Install `dotenv` Library Dependencies
 Before we start installing libraries, let's get our `package.json` file.
 * In the terminal, type:
-	* `npm init`
+	```npm init```
 
 Let's go to [npm's dotenv page](https://www.npmjs.com/package/dotenv) to find the package and get downloading and usage instructions.
 
 * In the terminal, type: 
-	* `npm i dotenv`
+	```npm i dotenv```
 
 This installs the library so we can use it in our project.
 
@@ -70,23 +70,23 @@ This is a bit different than most packages, and should always be kept at the bot
 Great! Now we have our project ready to code!
 
 ### Create "Hello World" Command
-Let's start coding!\
+Let's start coding!
 * Below the `dotenv` import, type:
-	* `console.log("Hello, " + process.env.name + "!");`
+```main.js
+console.log("Hello, " + process.env.name + "!");
+```
 
 This will give us a "Hello World"-type message when we run it correctly. But, first we need to assign our name to the environment variable `name`.
 
 * Go to the `.env` file and add:
-	* `name="User"`
+	```name="User"```
 * Save your project and we are ready to run it.
 
 * In the terminal, type:
-	* `node main.js`
+	```node main.js```
 
 It works! Cool!
-```
-Hello User!
-```
+```Hello User!```
 
 ### Add `opener` and Create "Opener" Command
 Now let's add something a bit more useful to give you a better idea of how to use environment variables.
@@ -94,26 +94,30 @@ Now let's add something a bit more useful to give you a better idea of how to us
 Got to the npm opener website. opener is a library that allows us to automatically open a website in a new window.
 
 install opener in your project terminal with
-npm i opener
+```npm i opener```
 
 Let's import it to main.js now.
 type 
+```main.js
 const opener = require('opener');
+```
 at the top
 
 then at the bottom of your main.js script type
+```main.js
 opener(process.env.url);
+```
 
 This will call whatever we have at the .env variable url. But it doesn't exist yet, so let's go fix that.
 
 in .env, type
-url="https://nodejs.org/en/"
+```url="https://nodejs.org/en/"```
 on a new line
 
 This will open the NodeJS website when we run our program. Test it out now.
 
 In the terminal run
-node main.js
+```node main.js```
 
 Pretty cool, huh?
 ### Preparing to Push to GitHub
@@ -122,14 +126,21 @@ One last thing to know is that .env files should never be uploaded to Github or 
 To get around this, we need a gitignore file. This is usually created for you if you make a new project with github, but we will do it from scratch.
 
 create a file called .gitignore
-inside type .env
+inside type:
+```
+node_modules/
+.env
+```
+
 This will exclude your .env file from ever being uploaded with git to a version control. 
 We will want to create a sample env to show our potential users what to do with their .env file if they are going to use our program themselves.
 
 Create a `.env-sample` file
 inside, type
+```
 name="your-name"
 url="your-url"
+```
 
 and save.
 
